@@ -30,6 +30,7 @@ figure{
 .placeholder{
     width: 100%;
     height: 100%;
+    object-fit: contain;
     background-color: darkgrey;
     border: 1px solid red;
     display: inline-block;
@@ -40,6 +41,7 @@ figure{
     background-color: red;
     width: 50px;
     height: 30px;
+    display: inline-block;
     position: absolute;
     left: 0px;
     bottom: 25px;
@@ -49,11 +51,12 @@ figure{
     font-weight: bold;
     color: white;
 }
-.discount50::before{
+.discount50::after{
     content: "-50%";
     background-color: red;
     width: 50px;
     height: 30px;
+    display: inline-block;
     position: absolute;
     left: 0px;
     bottom: 25px;
@@ -68,9 +71,8 @@ figure{
     background-color: green;
     width: auto;
     height: 30px;
-    padding: 4px;
-    position: absolute;
     display: inline-block;
+    position: absolute;
     left: 60px;
     bottom: 25px;
     font-size: 14px;
@@ -108,8 +110,8 @@ figure{
     font-weight: bold;
     vertical-align: middle;
     color: black;
- 
  }
+ /* Figcaption */
 figcaption{
     margin-top: 5px;
 }
@@ -131,45 +133,4 @@ figcaption{
 .price{
     font-size: 12px;
     text-decoration:line-through;
-}
-/**************/
-.box {
-    width: calc((100% / 3) - 4px);
-    display: inline-block;
-    height: 500px;
-    margin: 2px;
-    background-color: violet;
-    position: relative;
-}
-.box-overlay {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-color: green;
-    font-size: 12px;
-    display: none;
-}
-/* Su azione hover, quando passo su box, overlay cambia stato display diventando cosí visibile*/
-.box:hover .box-overlay{
-    display: block;
-}
-
-
-/* dopo il passaggio del mouse sul box, aggiungendo un contenuto nell'html - "Hello!"*/
-
-.box-overlay::after{
-    content: "Hello!";
-    background-color: pink;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: absolute;
-    right: -25px;
-    top: -25px;
-    font-size: 10px;
-    text-align: center;
-    line-height: 50px;
-    font-weight: bold;
-    color: white;
 }
