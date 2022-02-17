@@ -11,6 +11,7 @@ main{
 .row {
     font-size: 0;
     padding: 3%;
+    border: 1px solid blue;
 }
 /* CARDS */
 .cards {
@@ -19,12 +20,12 @@ main{
     height: 500px;
     margin: 5px;
     background-color: lavender;
-    /* position: relative; */
     border: 1px solid black;
 }
 figure{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 .placeholder{
     width: 100%;
@@ -34,6 +35,21 @@ figure{
     display: inline-block;
 
 }
+.like {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    vertical-align: middle;
+    color: black;
+ 
+ }
 figcaption{
     margin-top: 5px;
 }
@@ -75,26 +91,6 @@ figcaption{
     display: none;
 }
 /* Su azione hover, quando passo su box, overlay cambia stato display diventando cosí visibile*/
-.box:hover .box-overlay{
-    display: block;
-}
-
-/* Like */
-.like {
-   width: 40px;
-   height: 40px;
-   background-color: lightgrey;
-   position: absolute;
-   top: 20px;
-   right: 0px;
-   font-size: 12px;
-   text-align: center;
-   line-height: 50px;
-   font-weight: bold;
-   color: black;
-
-}
-
 .box:hover .box-overlay{
     display: block;
 }
