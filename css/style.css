@@ -134,3 +134,11 @@ figcaption{
     font-size: 12px;
     text-decoration:line-through;
 }
+
+/* img hover */
+.img{
+    display: block;
+}
+.img:hover{
+    display: none;
+}
